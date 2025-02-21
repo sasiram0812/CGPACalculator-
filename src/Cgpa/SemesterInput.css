@@ -1,0 +1,112 @@
+/* SemesterInput.css */
+.semester-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-in-out;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Center the card horizontally */
+    text-align: center; /* Center text inside the card */
+  }
+  
+  .semester-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .subject-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center; /* Center the subject inputs */
+  }
+  
+  .subject-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+    width: 100px; /* Set a fixed width for inputs */
+  }
+  
+  .subject-input::placeholder {
+    color: #ccc;
+  }
+  
+  .subject-input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  .remove-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center; /* Center the buttons */
+  }
+  
+  .add-subject-btn,
+  .remove-semester-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .add-subject-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .add-subject-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .remove-semester-btn {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .remove-semester-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
